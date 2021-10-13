@@ -9,6 +9,12 @@ class CartsController < ApplicationController
 
   # GET /carts/1 or /carts/1.json
   def show
+    return unless @cart.id != session[:cart_id]
+
+    respond_to do |format|
+      format.html { redirect_to store_index_url, notice: "Wrong cart" }
+      format.json { head :no_content }
+    end
   end
 
   # GET /carts/new
