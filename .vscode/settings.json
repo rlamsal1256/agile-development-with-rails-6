@@ -1,0 +1,8 @@
+{
+  "ruby.format": "rubocop",
+  "ruby.rubocop.executePath": "/opt/homebrew/opt/rbenv/shims/",
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "solargraph.commandPath": "/opt/homebrew/opt/rbenv/shims/solargraph",
+}
